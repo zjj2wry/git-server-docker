@@ -12,8 +12,8 @@ fi
 
 # Checking permissions and fixing SGID bit in repos folder
 # More info: https://github.com/jkarlosb/git-server-docker/issues/1
-if [ "$(ls -A /git-server/repos/)" ]; then
-  cd /git-server/repos
+if [ "$(ls -A /datasets/)" ]; then
+  cd /datasets
   chown -R git:git .
   chmod -R ug+rwX .
   find . -type d -exec chmod g+s '{}' +
