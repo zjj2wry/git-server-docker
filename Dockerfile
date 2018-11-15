@@ -22,7 +22,7 @@ WORKDIR /git-server/
 # -s flag changes user's shell
 RUN mkdir /git-server/keys \
   && adduser -D -s /usr/bin/git-shell git \
-  && echo git:12345 | chpasswd \
+  && passwd -d git \
   && mkdir /home/git/.ssh
 
 # This is a login shell for SSH accounts to provide restricted Git access.
