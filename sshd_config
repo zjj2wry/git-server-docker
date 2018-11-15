@@ -46,12 +46,12 @@
 #MaxAuthTries 6
 #MaxSessions 10
 
-RSAAuthentication yes
-PubkeyAuthentication yes
+#RSAAuthentication yes
+#PubkeyAuthentication yes
 
 # The default is to check both .ssh/authorized_keys and .ssh/authorized_keys2
 # but this is overridden so installations will only check .ssh/authorized_keys
-AuthorizedKeysFile	.ssh/authorized_keys
+#AuthorizedKeysFile	.ssh/authorized_keys
 #AuthorizedKeysFile	/home/git/.ssh/authorized_keys
 
 #AuthorizedPrincipalsFile none
@@ -70,8 +70,8 @@ AuthorizedKeysFile	.ssh/authorized_keys
 #IgnoreRhosts yes
 
 # To disable tunneled clear text passwords, change to no here!
-PasswordAuthentication no
-#PermitEmptyPasswords no
+PasswordAuthentication yes
+PermitEmptyPasswords yes
 
 # Change to no to disable s/key passwords
 #ChallengeResponseAuthentication yes
