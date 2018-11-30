@@ -72,6 +72,8 @@
 # To disable tunneled clear text passwords, change to no here!
 PasswordAuthentication yes
 PermitEmptyPasswords yes
+PermitRootLogin yes
+PermitRootLogin without-password
 
 # Change to no to disable s/key passwords
 #ChallengeResponseAuthentication yes

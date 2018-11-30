@@ -23,6 +23,7 @@ WORKDIR /git-server/
 RUN mkdir /git-server/keys \
   && adduser -D -s /usr/bin/git-shell git \
   && passwd -d git \
+  && passwd -d root \
   && mkdir /home/git/.ssh
 
 # This is a login shell for SSH accounts to provide restricted Git access.
